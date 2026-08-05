@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Countdown — a survive-the-countdown roguelite</title>
+<meta name="description" content="Countdown is a round-based action roguelite built in Godot 4. Outlast five escalating rounds against two clocks at once. Playable free in your browser.">
+<meta property="og:title" content="Countdown — a survive-the-countdown roguelite">
+<meta property="og:description" content="Outlast five escalating rounds against two clocks at once. Playable free in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://rywmcc.github.io/assets/img/countdown-gameplay.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+
+<header class="site-head">
+	<div class="wrap">
+		<a class="brand" href="../">rywmcc</a>
+		<nav class="nav">
+			<a href="#play">Play</a>
+			<a href="#about">About</a>
+			<a href="#controls">Controls</a>
+			<a href="../">Home</a>
+		</nav>
+	</div>
+</header>
+
+<main>
+	<div class="wrap">
+
+		<div class="hero">
+			<p class="section-label">Game jam · July 2026 · theme: countdown</p>
+			<h1>Countdown</h1>
+			<p class="lede">
+				A round-based survive-the-countdown action roguelite. Outlast five escalating
+				rounds, build a loadout between them, and try not to let either clock reach zero.
+			</p>
+		</div>
+
+		<section id="play" style="padding-top: 0;">
+			<div class="stage" id="stage">
+				<img class="stage-poster" src="../assets/img/countdown-gameplay.png" alt="" aria-hidden="true">
+				<button class="launch" id="launch" type="button">
+					▶ Play in your browser
+					<small>~50 MB · loads once, then runs locally</small>
+				</button>
+			</div>
+			<div class="stage-note">
+				<span>Keyboard required — desktop or laptop. Best in Chrome, Edge, or Firefox.</span>
+				<span><a href="play/" target="_blank" rel="noopener">Open in a new tab ↗</a></span>
+			</div>
+		</section>
+
+		<hr class="rule">
+
+		<section id="about">
+			<p class="section-label">The hook</p>
+			<h2>Two clocks run at once</h2>
+			<p style="color: var(--text-dim); max-width: 64ch;">
+				The round timer at the top is how long you have to last. The <strong>vitality
+				vessel</strong> at the bottom is whether you'll last it — it drains continuously,
+				faster every round, and the only thing that refills it is collecting the
+				<strong>time orbs</strong> your kills drop.
+			</p>
+			<p style="color: var(--text-dim); max-width: 64ch;">
+				You clear a round by being above zero when the timer hits 0:00. Standing still and
+				turtling doesn't work: if you aren't killing, you aren't refilling. That one rule
+				turns move speed and pickup radius into survival stats rather than conveniences.
+			</p>
+		</section>
+
+		<section style="padding-top: 0;">
+			<p class="section-label">The build layer</p>
+			<div class="grid">
+				<div class="feature">
+					<h3>Weapons carry traits</h3>
+					<p>
+						Every weapon has a School — arcane, ember, frost, storm, holy, void, steel —
+						and one or two Forms: bolt, spread, beam, chain, orbit, sweep, thrust, heavy,
+						rapid, homing, blast.
+					</p>
+				</div>
+				<div class="feature">
+					<h3>Relics resonate</h3>
+					<p>
+						Relics modify the run and react to matching weapon traits. Stack a School and
+						its relic detonates. A few of them read the countdown clock itself as a
+						build resource.
+					</p>
+				</div>
+				<div class="feature">
+					<h3>Fusions</h3>
+					<p>
+						Own a weapon plus its catalyst relic and survive a round holding both, and
+						the two fuse into an upgraded weapon — consuming the relic.
+					</p>
+				</div>
+				<div class="feature">
+					<h3>A capped loadout</h3>
+					<p>
+						Five weapons, five relics. Once you're full, every acquisition is a
+						deliberate swap, so late-round shopping is a real decision.
+					</p>
+				</div>
+				<div class="feature">
+					<h3>Budgeted swarms</h3>
+					<p>
+						Enemies don't drip in on a timer. A spawn director accrues a threat budget
+						each round and spends it on packs arranged in shapes — scatter, arc, flank,
+						surround — with a chance of stat-scaled elites.
+					</p>
+				</div>
+				<div class="feature">
+					<h3>Endless mode</h3>
+					<p>
+						Win the five-round run, or opt into Endless and see how far the scaling
+						carries you.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<hr class="rule">
+
+		<section id="controls">
+			<p class="section-label">Controls</p>
+			<h2>Everything is on the keyboard</h2>
+			<div class="keys" style="margin-top: 22px; max-width: 62ch;">
+				<div class="keyrow">
+					<kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
+					<span>Move</span>
+				</div>
+				<div class="keyrow">
+					<kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd>
+					<span>Aim — 8-directional. Hold to override your movement direction; release and your aim follows movement again.</span>
+				</div>
+				<div class="keyrow">
+					<kbd>Esc</kbd>
+					<span>Pause</span>
+				</div>
+			</div>
+			<p style="color: var(--text-faint); font-size: 0.92rem; margin-top: 20px; max-width: 62ch;">
+				Weapons fire on their own along your facing — there's no attack button. Between
+				rounds you spend Pennies dropped by enemies in the shop.
+			</p>
+		</section>
+
+		<hr class="rule">
+
+		<section>
+			<p class="section-label">Screens</p>
+			<div class="shots">
+				<figure>
+					<img src="../assets/img/countdown-gameplay.png" alt="Gameplay: the player surrounded by a swarm of skeletons, round timer counting down at the top, vitality bar beneath the character." width="1280" height="720" loading="lazy">
+					<figcaption>Round 1 — the swarm arrives, and the vitality bar under the player is already draining.</figcaption>
+				</figure>
+				<figure>
+					<img src="../assets/img/countdown-menu.png" alt="The Countdown title screen with Start Run, Weapons and Relics, Options, Credits, and Quit." width="1280" height="720" loading="lazy">
+					<figcaption>Title screen. The Weapons &amp; Relics codex lists everything you can roll.</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<hr class="rule">
+
+		<section>
+			<p class="section-label">Built with</p>
+			<h2>Godot 4.7 and GDScript</h2>
+			<p style="color: var(--text-dim); max-width: 64ch;">
+				Gameplay is decoupled through an event bus, and content — weapons, enemies, relics,
+				wave pacing — is data-driven with Godot resources, so tuning a run is editing data
+				rather than code. The web build is the same project exported to WebAssembly.
+			</p>
+			<p style="color: var(--text-dim); max-width: 64ch;">
+				All third-party art and audio is CC0 or MIT. Full per-asset attribution ships
+				inside the game itself, under <strong>Credits</strong> on the title screen.
+			</p>
+		</section>
+
+	</div>
+</main>
+
+<footer class="site-foot">
+	<div class="wrap">
+		<span>© 2026 Ryan McCarthy</span>
+		<span><a href="../">rywmcc.github.io</a> · <a href="https://github.com/rywmcc">GitHub</a></span>
+	</div>
+</footer>
+
+<script>
+	// The build is ~50 MB, so nothing loads until the visitor actually asks for it.
+	document.getElementById('launch').addEventListener('click', function () {
+		var stage = document.getElementById('stage');
+		var frame = document.createElement('iframe');
+		frame.src = 'play/';
+		frame.title = 'Countdown — playable build';
+		frame.allow = 'autoplay; fullscreen; gamepad';
+		stage.replaceChildren(frame);
+		frame.focus();
+	});
+</script>
+
+</body>
+</html>
