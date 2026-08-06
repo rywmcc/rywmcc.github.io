@@ -289,6 +289,64 @@ kbd {
 	color: var(--text-faint);
 }
 
+/* ---- resume ---- */
+.resume { max-width: 760px; }
+.resume-contact {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 14px;
+	color: var(--text-dim);
+	font-size: 0.94rem;
+	margin: 0 0 26px;
+}
+.resume-contact span:not(:last-child)::after {
+	content: "·";
+	margin-left: 14px;
+	color: var(--text-faint);
+}
+.resume-section { margin-top: 42px; }
+.resume-section > h2 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	color: var(--amber);
+	font-weight: 650;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--line);
+	margin-bottom: 20px;
+}
+.skills { display: grid; gap: 9px; }
+.skills div { font-size: 0.96rem; color: var(--text-dim); }
+.skills strong { color: var(--text); font-weight: 600; }
+
+.job { margin-bottom: 28px; }
+.job:last-child { margin-bottom: 0; }
+.job-head {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 4px 16px;
+}
+.job-head h3 { margin: 0; font-size: 1.06rem; }
+.job-org { font-size: 1.06rem; font-weight: 650; margin: 0 0 2px; }
+.job-when {
+	font-size: 0.88rem;
+	color: var(--text-faint);
+	font-style: italic;
+	white-space: nowrap;
+}
+.job-role { color: var(--amber); font-weight: 600; }
+.job ul { margin: 10px 0 0; padding-left: 20px; }
+.job li {
+	margin-bottom: 9px;
+	color: var(--text-dim);
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+.job li:last-child { margin-bottom: 0; }
+.job li strong { color: var(--text); font-weight: 600; }
+
 /* ---- footer ---- */
 .site-foot {
 	border-top: 1px solid var(--line-soft);

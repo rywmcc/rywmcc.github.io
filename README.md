@@ -11,6 +11,8 @@ Pages redeploys in a minute or so.
 index.html              Home
 countdown/index.html    Countdown project page (description, controls, screenshots)
 countdown/play/         The Godot 4 web export — the playable build
+resume/index.html       Résumé as HTML
+assets/*.pdf            Résumé PDF (kept in sync by hand — replace both when it changes)
 assets/css/site.css     All styling
 assets/img/             Screenshots and favicon
 .nojekyll               Serve files as-is; skip Jekyll processing
